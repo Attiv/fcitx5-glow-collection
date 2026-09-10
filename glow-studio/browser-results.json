@@ -1,0 +1,28 @@
+{
+  "engine": "Playwright WebKit",
+  "version": "26.4",
+  "checks": [
+    "WeChat: selected-only glow, keyboard navigation, stable geometry, correct animation",
+    "Apple: selected-only glow, keyboard navigation, stable geometry, correct animation",
+    "Telegram: selected-only glow, keyboard navigation, stable geometry, correct animation",
+    "Cyberpunk: selected-only glow, keyboard navigation, stable geometry, correct animation",
+    "Aurora: selected-only glow, keyboard navigation, stable geometry, correct animation",
+    "Obsidian: selected-only glow, keyboard navigation, stable geometry, correct animation",
+    "Sakura: selected-only glow, keyboard navigation, stable geometry, correct animation",
+    "Matcha: selected-only glow, keyboard navigation, stable geometry, correct animation",
+    "Sunset: selected-only glow, keyboard navigation, stable geometry, correct animation",
+    "Dracula: selected-only glow, keyboard navigation, stable geometry, correct animation",
+    "Matrix: selected-only glow, keyboard navigation, stable geometry, correct animation",
+    "Amber: selected-only glow, keyboard navigation, stable geometry, correct animation",
+    "Hologram: selected-only glow, keyboard navigation, stable geometry, correct animation",
+    "Porcelain: selected-only glow, keyboard navigation, stable geometry, correct animation",
+    "28 light/dark preview frames render without horizontal clipping at 1440px viewport",
+    "28 vertical palettes with comments render correctly",
+    "System prefers-reduced-motion disables all animations while preserving selected glow",
+    "Manual motion toggle produces static glow",
+    "No browser script errors; no network asset requests"
+  ],
+  "passed": 19,
+  "errors": [],
+  "externalRequests": []
+}

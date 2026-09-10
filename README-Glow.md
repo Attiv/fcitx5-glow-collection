@@ -4,13 +4,15 @@
 
 ## 先看效果
 
-双击打开 [交互图册](glow-studio/preview.html)，或在终端运行：
+**深色模式**
 
-```sh
-open ~/.local/share/fcitx5/theme/glow-studio/preview.html
-```
+![深色图册](glow-studio/screenshots/dark-gallery.png)
 
-可切换浅色、深色、深浅对照、横排/竖排，点击候选体验选中高亮。取消“呼吸 / 流光”可看静态版本。**图册是复用实际主题 CSS 的模拟预览，不是原生输入法截图**；图册里的墙纸不会随主题安装。
+**浅色模式**
+
+![浅色图册](glow-studio/screenshots/light-gallery.png)
+
+> 以上为复用主题 CSS 的模拟预览，不是原生输入法截图。双击打开 [交互图册](glow-studio/preview.html) 可切换深浅、横竖排，点击候选体验选中高亮。
 
 ## 使用方法
 

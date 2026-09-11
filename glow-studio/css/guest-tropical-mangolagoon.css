@@ -1,0 +1,114 @@
+/* Fcitx5 Signature Styles — generated  |  imported into Glow Collection repo (third-party)
+ * Tropical-MangoLagoon · 热带主义·芒果泻湖
+ * Compact vertical theme with a static, edge-weighted background; local paint-only CSS.
+ */
+
+#fcitx-theme, #fcitx-theme.fcitx-light {
+  --ss-surface: repeating-radial-gradient(ellipse at 0% 100%, transparent 0 18px, rgba(0, 168, 143, 0.025) 19px 21px, transparent 22px 36px), radial-gradient(ellipse at 5% 0%, rgba(255, 157, 36, 0.16), transparent 46%), radial-gradient(ellipse at 96% 100%, rgba(0, 168, 143, 0.14), transparent 49%), linear-gradient(145deg, rgba(241, 255, 249, 0.985), rgba(240, 246, 255, 0.96));
+  --ss-text: #153b38;
+  --ss-muted: #4f6f6b;
+  --ss-border: #c1d4cf;
+  --ss-c1: #ff9d24;
+  --ss-c2: #00a88f;
+  --ss-c3: #146cc0;
+  --ss-caret-glow: rgba(255, 157, 36, 0.28);
+  --ss-selected: linear-gradient(118deg, #965d15, #007a68, #965d15);
+  --ss-selected-text: #ffffff;
+  --ss-selected-shadow: inset 0 1px 0 rgba(255,255,255,.34), 0 0 8px rgba(255, 157, 36, 0.26), 0 0 13px rgba(0, 168, 143, 0.18);
+  --ss-hover: rgba(255, 157, 36, 0.09);
+  --ss-panel-shadow: rgba(0, 0, 0, 0.12);
+}
+
+#fcitx-theme.fcitx-dark {
+  --ss-surface: repeating-radial-gradient(ellipse at 0% 100%, transparent 0 18px, rgba(0, 168, 143, 0.025) 19px 21px, transparent 22px 36px), radial-gradient(ellipse at 5% 0%, rgba(255, 157, 36, 0.16), transparent 46%), radial-gradient(ellipse at 96% 100%, rgba(0, 168, 143, 0.14), transparent 49%), linear-gradient(145deg, rgba(12, 40, 36, 0.985), rgba(19, 36, 58, 0.96));
+  --ss-text: #e2fff8;
+  --ss-muted: #a5c7bf;
+  --ss-border: #425e59;
+  --ss-c1: #ff9d24;
+  --ss-c2: #00a88f;
+  --ss-c3: #146cc0;
+  --ss-caret-glow: rgba(255, 157, 36, 0.28);
+  --ss-selected: linear-gradient(118deg, #ff9d24, #00a88f, #ff9d24);
+  --ss-selected-text: #17171b;
+  --ss-selected-shadow: inset 0 1px 0 rgba(255,255,255,.34), 0 0 8px rgba(255, 157, 36, 0.26), 0 0 13px rgba(0, 168, 143, 0.18);
+  --ss-hover: rgba(255, 157, 36, 0.09);
+  --ss-panel-shadow: rgba(0, 0, 0, 0.28);
+}
+
+#fcitx-theme .fcitx-panel {
+  background: var(--ss-surface) !important;
+  border-color: var(--ss-border) !important;
+  box-shadow: 0 5px 14px var(--ss-panel-shadow), inset 0 1px 0 rgba(255,255,255,.07) !important;
+}
+#fcitx-theme .fcitx-candidate-background,
+#fcitx-theme .fcitx-panel-blur,
+#fcitx-theme .fcitx-header,
+#fcitx-theme .fcitx-preedit,
+#fcitx-theme .fcitx-aux-up,
+#fcitx-theme .fcitx-aux-down,
+#fcitx-theme .fcitx-paging,
+#fcitx-theme .fcitx-divider-side,
+#fcitx-theme .fcitx-hoverables.fcitx-horizontal-scroll .fcitx-divider-middle {
+  background-color: transparent !important;
+}
+#fcitx-theme .fcitx-text,
+#fcitx-theme .fcitx-preedit,
+#fcitx-theme .fcitx-aux-up,
+#fcitx-theme .fcitx-aux-down { color: var(--ss-text) !important; }
+#fcitx-theme .fcitx-label,
+#fcitx-theme .fcitx-comment { color: var(--ss-muted) !important; }
+#fcitx-theme .fcitx-text,
+#fcitx-theme .fcitx-label,
+#fcitx-theme .fcitx-comment { text-shadow: none; }
+#fcitx-theme .fcitx-caret.fcitx-no-text {
+  background-color: var(--ss-c1) !important;
+  box-shadow: 0 0 4px var(--ss-caret-glow);
+}
+#fcitx-theme .fcitx-candidate-inner {
+  background: transparent !important;
+  border-radius: 5px !important;
+  box-shadow: none;
+  transition: background-color 140ms ease, box-shadow 140ms ease;
+}
+#fcitx-theme .fcitx-candidate.fcitx-highlighted { z-index: 1; }
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-candidate-inner {
+  background: var(--ss-selected) !important;
+  background-size: 220% 100% !important;
+  box-shadow: var(--ss-selected-shadow);
+}
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-text,
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-label,
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-comment {
+  color: var(--ss-selected-text) !important;
+}
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-mark.fcitx-no-text {
+  background-color: var(--ss-selected-text) !important;
+}
+#fcitx-theme .fcitx-mousemoved .fcitx-candidate:not(.fcitx-highlighted):hover .fcitx-candidate-inner {
+  background: var(--ss-hover) !important;
+  box-shadow: inset 0 0 0 1px var(--ss-border);
+}
+#fcitx-theme .fcitx-contextmenu {
+  background: var(--ss-surface) !important;
+  border-color: var(--ss-border) !important;
+  color: var(--ss-text) !important;
+}
+#fcitx-theme .fcitx-menu-item:hover {
+  background: var(--ss-selected) !important;
+  color: var(--ss-selected-text) !important;
+}
+
+@keyframes ss-flow {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-candidate-inner {
+  animation: var(--ss-motion, ss-flow 7s ease-in-out infinite);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #fcitx-theme .fcitx-candidate-inner {
+    animation: none !important;
+    transition: none !important;
+  }
+}

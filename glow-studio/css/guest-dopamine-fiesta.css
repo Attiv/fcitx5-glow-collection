@@ -1,0 +1,116 @@
+/* Fcitx5 Dopamine Collection — generated  |  imported into Glow Collection repo (third-party)
+ * Dopamine-Fiesta · 节庆撞色
+ * Static edge-weighted background; no remote assets, scripts, or layout geometry.
+ */
+
+#fcitx-theme, #fcitx-theme.fcitx-light {
+  --dp-surface: repeating-linear-gradient(135deg, transparent 0 13px, rgba(129, 103, 0, 0.035) 13px 15px), radial-gradient(circle at 5% 8%, rgba(189, 56, 47, 0.13) 0 5px, transparent 6px), linear-gradient(145deg, rgba(255, 245, 236, 0.985), rgba(238, 243, 255, 0.965));
+  --dp-text: #402b2a;
+  --dp-muted: #755955;
+  --dp-border: #e9bfae;
+  --dp-accent: #bd382f;
+  --dp-accent-2: #3153ad;
+  --dp-accent-3: #816700;
+  --dp-selected: linear-gradient(120deg, #bd382f, #3153ad, #816700);
+  --dp-selected-text: #ffffff;
+  --dp-glow: rgba(189, 56, 47, 0.24);
+  --dp-glow-2: rgba(129, 103, 0, 0.18);
+  --dp-hover: rgba(49, 83, 173, 0.13);
+  --dp-shadow: rgba(0, 0, 0, 0.14);
+}
+
+#fcitx-theme.fcitx-dark {
+  --dp-surface: repeating-linear-gradient(135deg, transparent 0 13px, rgba(240, 212, 95, 0.035) 13px 15px), radial-gradient(circle at 5% 8%, rgba(255, 133, 121, 0.13) 0 5px, transparent 6px), linear-gradient(145deg, rgba(42, 25, 27, 0.985), rgba(23, 32, 58, 0.965));
+  --dp-text: #fff0e9;
+  --dp-muted: #d0b1ab;
+  --dp-border: #754547;
+  --dp-accent: #ff8579;
+  --dp-accent-2: #94b3ff;
+  --dp-accent-3: #f0d45f;
+  --dp-selected: linear-gradient(120deg, #ff8579, #94b3ff, #f0d45f);
+  --dp-selected-text: #391314;
+  --dp-glow: rgba(255, 133, 121, 0.34);
+  --dp-glow-2: rgba(240, 212, 95, 0.28);
+  --dp-hover: rgba(148, 179, 255, 0.13);
+  --dp-shadow: rgba(0, 0, 0, 0.3);
+}
+
+#fcitx-theme .fcitx-panel {
+  background: var(--dp-surface) !important;
+  border-color: var(--dp-border) !important;
+  box-shadow: 0 7px 18px var(--dp-shadow), inset 0 1px 0 rgba(255,255,255,.14) !important;
+}
+#fcitx-theme .fcitx-candidate-background,
+#fcitx-theme .fcitx-panel-blur,
+#fcitx-theme .fcitx-header,
+#fcitx-theme .fcitx-preedit,
+#fcitx-theme .fcitx-aux-up,
+#fcitx-theme .fcitx-aux-down,
+#fcitx-theme .fcitx-paging,
+#fcitx-theme .fcitx-divider-side,
+#fcitx-theme .fcitx-hoverables.fcitx-horizontal-scroll .fcitx-divider-middle {
+  background-color: transparent !important;
+}
+#fcitx-theme .fcitx-text,
+#fcitx-theme .fcitx-preedit,
+#fcitx-theme .fcitx-aux-up,
+#fcitx-theme .fcitx-aux-down { color: var(--dp-text) !important; }
+#fcitx-theme .fcitx-label,
+#fcitx-theme .fcitx-comment { color: var(--dp-muted) !important; }
+#fcitx-theme .fcitx-text,
+#fcitx-theme .fcitx-label,
+#fcitx-theme .fcitx-comment { text-shadow: none; }
+#fcitx-theme .fcitx-caret.fcitx-no-text {
+  background-color: var(--dp-accent) !important;
+  box-shadow: 0 0 6px var(--dp-glow);
+}
+#fcitx-theme .fcitx-candidate-inner {
+  background: transparent !important;
+  box-shadow: none;
+  transition: background-color 150ms ease, box-shadow 150ms ease;
+}
+#fcitx-theme .fcitx-candidate.fcitx-highlighted { z-index: 1; }
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-candidate-inner {
+  background: var(--dp-selected) !important;
+  background-size: 240% 100% !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.36), 0 0 7px var(--dp-glow), 0 0 15px var(--dp-glow-2);
+}
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-text,
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-label,
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-comment {
+  color: var(--dp-selected-text) !important;
+}
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-mark.fcitx-no-text {
+  background-color: var(--dp-selected-text) !important;
+  box-shadow: 0 0 6px var(--dp-glow-2);
+}
+#fcitx-theme .fcitx-mousemoved .fcitx-candidate:not(.fcitx-highlighted):hover .fcitx-candidate-inner {
+  background: var(--dp-hover) !important;
+  box-shadow: inset 0 0 0 1px var(--dp-border);
+}
+#fcitx-theme .fcitx-contextmenu {
+  background: var(--dp-surface) !important;
+  border-color: var(--dp-border) !important;
+  color: var(--dp-text) !important;
+}
+#fcitx-theme .fcitx-menu-item:hover {
+  background: var(--dp-selected) !important;
+  color: var(--dp-selected-text) !important;
+}
+
+#fcitx-theme .fcitx-candidate-inner { border-radius: 5px !important; }
+
+@keyframes dp-pop {
+  0%, 100% { box-shadow: inset 0 1px 0 rgba(255,255,255,.36), 0 0 6px var(--dp-glow), 0 0 12px var(--dp-glow-2); }
+  50% { box-shadow: inset 0 1px 0 rgba(255,255,255,.48), 0 0 9px var(--dp-glow), 0 0 18px var(--dp-glow-2); }
+}
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-candidate-inner {
+  animation: var(--dp-motion, dp-pop 3.6s ease-in-out infinite);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #fcitx-theme .fcitx-candidate-inner {
+    animation: none !important;
+    transition: none !important;
+  }
+}

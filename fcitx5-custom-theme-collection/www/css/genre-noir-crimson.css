@@ -1,0 +1,99 @@
+/* Fcitx5 Genre Collection — generated
+ * Noir-Crimson · 黑色电影·猩红
+ * 煤黑、烟灰与一抹猩红，悬疑而危险
+ * Static edge-weighted background; no remote assets, scripts, or plugins.
+ */
+
+#fcitx-theme, #fcitx-theme.fcitx-light {
+  --gc-surface: repeating-linear-gradient(112deg, transparent 0 8px, rgba(37, 31, 32, 0.022) 8px 10px), linear-gradient(90deg, rgba(143, 38, 50, 0.08) 0 7%, transparent 7% 100%), radial-gradient(ellipse at 100% 100%, rgba(143, 38, 50, 0.055), transparent 50%), linear-gradient(145deg, rgba(247, 245, 243, 0.985), rgba(234, 232, 231, 0.965));
+  --gc-text: #251f20;
+  --gc-muted: #66595b;
+  --gc-border: #c9bfc0;
+  --gc-accent: #8f2632;
+  --gc-selected: linear-gradient(118deg, #681b25, #262326);
+  --gc-selected-text: #ffffff;
+  --gc-selected-shadow: inset 0 0 0 1px rgba(143, 38, 50, 0.54), 3px 4px 10px rgba(0, 0, 0, 0.18);
+  --gc-hover: rgba(143, 38, 50, 0.08);
+  --gc-glow: rgba(143, 38, 50, 0.22);
+  --gc-panel-shadow: rgba(0, 0, 0, 0.11);
+}
+
+#fcitx-theme.fcitx-dark {
+  --gc-surface: repeating-linear-gradient(112deg, transparent 0 8px, rgba(242, 233, 233, 0.022) 8px 10px), linear-gradient(90deg, rgba(213, 103, 116, 0.08) 0 7%, transparent 7% 100%), radial-gradient(ellipse at 100% 100%, rgba(213, 103, 116, 0.055), transparent 50%), linear-gradient(145deg, rgba(13, 11, 12, 0.985), rgba(24, 18, 20, 0.965));
+  --gc-text: #f2e9e9;
+  --gc-muted: #b6a8aa;
+  --gc-border: #453438;
+  --gc-accent: #d56774;
+  --gc-selected: linear-gradient(118deg, #e89ba4, #cab8bb);
+  --gc-selected-text: #2b1317;
+  --gc-selected-shadow: inset 0 0 0 1px rgba(213, 103, 116, 0.54), 3px 4px 10px rgba(0, 0, 0, 0.48);
+  --gc-hover: rgba(213, 103, 116, 0.08);
+  --gc-glow: rgba(213, 103, 116, 0.22);
+  --gc-panel-shadow: rgba(0, 0, 0, 0.26);
+}
+
+#fcitx-theme .fcitx-panel {
+  background: var(--gc-surface) !important;
+  border-color: var(--gc-border) !important;
+  box-shadow: 7px 9px 20px var(--gc-panel-shadow), inset 0 1px 0 rgba(255,255,255,.06) !important;
+}
+#fcitx-theme .fcitx-candidate-background,
+#fcitx-theme .fcitx-panel-blur,
+#fcitx-theme .fcitx-header,
+#fcitx-theme .fcitx-preedit,
+#fcitx-theme .fcitx-aux-up,
+#fcitx-theme .fcitx-aux-down,
+#fcitx-theme .fcitx-paging,
+#fcitx-theme .fcitx-divider-side,
+#fcitx-theme .fcitx-hoverables.fcitx-horizontal-scroll .fcitx-divider-middle {
+  background-color: transparent !important;
+}
+#fcitx-theme .fcitx-text,
+#fcitx-theme .fcitx-preedit,
+#fcitx-theme .fcitx-aux-up,
+#fcitx-theme .fcitx-aux-down { color: var(--gc-text) !important; }
+#fcitx-theme .fcitx-label,
+#fcitx-theme .fcitx-comment { color: var(--gc-muted) !important; }
+#fcitx-theme .fcitx-text,
+#fcitx-theme .fcitx-label,
+#fcitx-theme .fcitx-comment { text-shadow: none; }
+#fcitx-theme .fcitx-caret.fcitx-no-text {
+  background-color: var(--gc-accent) !important;
+  box-shadow: 0 0 4px var(--gc-glow);
+}
+#fcitx-theme .fcitx-candidate-inner {
+  background: transparent !important;
+  border-radius: 5px !important;
+  box-shadow: none;
+  transition: background-color 140ms ease, box-shadow 140ms ease;
+}
+#fcitx-theme .fcitx-candidate.fcitx-highlighted { z-index: 1; }
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-candidate-inner {
+  background: var(--gc-selected) !important;
+  box-shadow: var(--gc-selected-shadow);
+}
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-text,
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-label,
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-comment {
+  color: var(--gc-selected-text) !important;
+}
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-mark.fcitx-no-text {
+  background-color: var(--gc-selected-text) !important;
+}
+#fcitx-theme .fcitx-mousemoved .fcitx-candidate:not(.fcitx-highlighted):hover .fcitx-candidate-inner {
+  background: var(--gc-hover) !important;
+  box-shadow: inset 0 0 0 1px var(--gc-border);
+}
+#fcitx-theme .fcitx-contextmenu {
+  background: var(--gc-surface) !important;
+  border-color: var(--gc-border) !important;
+  color: var(--gc-text) !important;
+}
+#fcitx-theme .fcitx-menu-item:hover {
+  background: var(--gc-selected) !important;
+  color: var(--gc-selected-text) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #fcitx-theme .fcitx-candidate-inner { transition: none !important; }
+}

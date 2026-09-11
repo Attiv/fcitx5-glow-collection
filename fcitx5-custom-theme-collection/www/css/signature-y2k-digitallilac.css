@@ -1,0 +1,114 @@
+/* Fcitx5 Signature Styles — generated
+ * Y2K-DigitalLilac · Y2K·数码丁香
+ * Compact vertical theme with a static, edge-weighted background; local paint-only CSS.
+ */
+
+#fcitx-theme, #fcitx-theme.fcitx-light {
+  --ss-surface: linear-gradient(165deg, rgba(255,255,255,.16), transparent 42%), radial-gradient(circle at 90% 10%, rgba(244, 114, 182, 0.19), transparent 48%), linear-gradient(145deg, rgba(248, 251, 255, 0.985), rgba(255, 242, 251, 0.96));
+  --ss-text: #30303c;
+  --ss-muted: #666676;
+  --ss-border: #ccced4;
+  --ss-c1: #a78bfa;
+  --ss-c2: #f472b6;
+  --ss-c3: #67e8f9;
+  --ss-caret-glow: rgba(167, 139, 250, 0.28);
+  --ss-selected: linear-gradient(118deg, #7a65b6, #b25485, #7a65b6);
+  --ss-selected-text: #ffffff;
+  --ss-selected-shadow: inset 0 2px 0 rgba(255,255,255,.46), inset 0 0 0 1px rgba(103, 232, 249, 0.42), 0 0 10px rgba(244, 114, 182, 0.2);
+  --ss-hover: rgba(167, 139, 250, 0.09);
+  --ss-panel-shadow: rgba(0, 0, 0, 0.12);
+}
+
+#fcitx-theme.fcitx-dark {
+  --ss-surface: linear-gradient(165deg, rgba(255,255,255,.16), transparent 42%), radial-gradient(circle at 90% 10%, rgba(244, 114, 182, 0.19), transparent 48%), linear-gradient(145deg, rgba(22, 23, 36, 0.985), rgba(32, 32, 49, 0.96));
+  --ss-text: #f4f0ff;
+  --ss-muted: #b9b4ca;
+  --ss-border: #4e4d5b;
+  --ss-c1: #a78bfa;
+  --ss-c2: #f472b6;
+  --ss-c3: #67e8f9;
+  --ss-caret-glow: rgba(167, 139, 250, 0.28);
+  --ss-selected: linear-gradient(118deg, #a78bfa, #f472b6, #a78bfa);
+  --ss-selected-text: #17171b;
+  --ss-selected-shadow: inset 0 2px 0 rgba(255,255,255,.46), inset 0 0 0 1px rgba(103, 232, 249, 0.42), 0 0 10px rgba(244, 114, 182, 0.2);
+  --ss-hover: rgba(167, 139, 250, 0.09);
+  --ss-panel-shadow: rgba(0, 0, 0, 0.28);
+}
+
+#fcitx-theme .fcitx-panel {
+  background: var(--ss-surface) !important;
+  border-color: var(--ss-border) !important;
+  box-shadow: 0 5px 14px var(--ss-panel-shadow), inset 0 1px 0 rgba(255,255,255,.07) !important;
+}
+#fcitx-theme .fcitx-candidate-background,
+#fcitx-theme .fcitx-panel-blur,
+#fcitx-theme .fcitx-header,
+#fcitx-theme .fcitx-preedit,
+#fcitx-theme .fcitx-aux-up,
+#fcitx-theme .fcitx-aux-down,
+#fcitx-theme .fcitx-paging,
+#fcitx-theme .fcitx-divider-side,
+#fcitx-theme .fcitx-hoverables.fcitx-horizontal-scroll .fcitx-divider-middle {
+  background-color: transparent !important;
+}
+#fcitx-theme .fcitx-text,
+#fcitx-theme .fcitx-preedit,
+#fcitx-theme .fcitx-aux-up,
+#fcitx-theme .fcitx-aux-down { color: var(--ss-text) !important; }
+#fcitx-theme .fcitx-label,
+#fcitx-theme .fcitx-comment { color: var(--ss-muted) !important; }
+#fcitx-theme .fcitx-text,
+#fcitx-theme .fcitx-label,
+#fcitx-theme .fcitx-comment { text-shadow: none; }
+#fcitx-theme .fcitx-caret.fcitx-no-text {
+  background-color: var(--ss-c1) !important;
+  box-shadow: 0 0 4px var(--ss-caret-glow);
+}
+#fcitx-theme .fcitx-candidate-inner {
+  background: transparent !important;
+  border-radius: 5px !important;
+  box-shadow: none;
+  transition: background-color 140ms ease, box-shadow 140ms ease;
+}
+#fcitx-theme .fcitx-candidate.fcitx-highlighted { z-index: 1; }
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-candidate-inner {
+  background: var(--ss-selected) !important;
+  background-size: 220% 100% !important;
+  box-shadow: var(--ss-selected-shadow);
+}
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-text,
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-label,
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-comment {
+  color: var(--ss-selected-text) !important;
+}
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-mark.fcitx-no-text {
+  background-color: var(--ss-selected-text) !important;
+}
+#fcitx-theme .fcitx-mousemoved .fcitx-candidate:not(.fcitx-highlighted):hover .fcitx-candidate-inner {
+  background: var(--ss-hover) !important;
+  box-shadow: inset 0 0 0 1px var(--ss-border);
+}
+#fcitx-theme .fcitx-contextmenu {
+  background: var(--ss-surface) !important;
+  border-color: var(--ss-border) !important;
+  color: var(--ss-text) !important;
+}
+#fcitx-theme .fcitx-menu-item:hover {
+  background: var(--ss-selected) !important;
+  color: var(--ss-selected-text) !important;
+}
+
+@keyframes ss-flow {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-candidate-inner {
+  animation: var(--ss-motion, ss-flow 7s ease-in-out infinite);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #fcitx-theme .fcitx-candidate-inner {
+    animation: none !important;
+    transition: none !important;
+  }
+}

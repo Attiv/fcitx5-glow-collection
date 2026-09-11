@@ -1,0 +1,116 @@
+/* Fcitx5 Dopamine Collection — generated  |  imported into Glow Collection repo (third-party)
+ * Dopamine-Citrus · 柑橘汽水
+ * Static edge-weighted background; no remote assets, scripts, or layout geometry.
+ */
+
+#fcitx-theme, #fcitx-theme.fcitx-light {
+  --dp-surface: radial-gradient(circle at 7% 10%, transparent 0 7px, rgba(122, 105, 0, 0.11) 8px 10px, transparent 11px), radial-gradient(circle at 95% 94%, rgba(45, 120, 81, 0.11) 0 13px, transparent 14px), linear-gradient(145deg, rgba(255, 249, 232, 0.985), rgba(242, 255, 232, 0.965));
+  --dp-text: #402d12;
+  --dp-muted: #705b36;
+  --dp-border: #ead194;
+  --dp-accent: #b94a00;
+  --dp-accent-2: #7a6900;
+  --dp-accent-3: #2d7851;
+  --dp-selected: linear-gradient(120deg, #b94a00, #7a6900, #2d7851);
+  --dp-selected-text: #ffffff;
+  --dp-glow: rgba(185, 74, 0, 0.24);
+  --dp-glow-2: rgba(45, 120, 81, 0.18);
+  --dp-hover: rgba(122, 105, 0, 0.13);
+  --dp-shadow: rgba(0, 0, 0, 0.14);
+}
+
+#fcitx-theme.fcitx-dark {
+  --dp-surface: radial-gradient(circle at 7% 10%, transparent 0 7px, rgba(232, 212, 79, 0.11) 8px 10px, transparent 11px), radial-gradient(circle at 95% 94%, rgba(130, 210, 143, 0.11) 0 13px, transparent 14px), linear-gradient(145deg, rgba(37, 28, 14, 0.985), rgba(23, 38, 26, 0.965));
+  --dp-text: #fff2c9;
+  --dp-muted: #cfb984;
+  --dp-border: #6c5829;
+  --dp-accent: #ffb24a;
+  --dp-accent-2: #e8d44f;
+  --dp-accent-3: #82d28f;
+  --dp-selected: linear-gradient(120deg, #ffb24a, #e8d44f, #82d28f);
+  --dp-selected-text: #352200;
+  --dp-glow: rgba(255, 178, 74, 0.34);
+  --dp-glow-2: rgba(130, 210, 143, 0.28);
+  --dp-hover: rgba(232, 212, 79, 0.13);
+  --dp-shadow: rgba(0, 0, 0, 0.3);
+}
+
+#fcitx-theme .fcitx-panel {
+  background: var(--dp-surface) !important;
+  border-color: var(--dp-border) !important;
+  box-shadow: 0 7px 18px var(--dp-shadow), inset 0 1px 0 rgba(255,255,255,.14) !important;
+}
+#fcitx-theme .fcitx-candidate-background,
+#fcitx-theme .fcitx-panel-blur,
+#fcitx-theme .fcitx-header,
+#fcitx-theme .fcitx-preedit,
+#fcitx-theme .fcitx-aux-up,
+#fcitx-theme .fcitx-aux-down,
+#fcitx-theme .fcitx-paging,
+#fcitx-theme .fcitx-divider-side,
+#fcitx-theme .fcitx-hoverables.fcitx-horizontal-scroll .fcitx-divider-middle {
+  background-color: transparent !important;
+}
+#fcitx-theme .fcitx-text,
+#fcitx-theme .fcitx-preedit,
+#fcitx-theme .fcitx-aux-up,
+#fcitx-theme .fcitx-aux-down { color: var(--dp-text) !important; }
+#fcitx-theme .fcitx-label,
+#fcitx-theme .fcitx-comment { color: var(--dp-muted) !important; }
+#fcitx-theme .fcitx-text,
+#fcitx-theme .fcitx-label,
+#fcitx-theme .fcitx-comment { text-shadow: none; }
+#fcitx-theme .fcitx-caret.fcitx-no-text {
+  background-color: var(--dp-accent) !important;
+  box-shadow: 0 0 6px var(--dp-glow);
+}
+#fcitx-theme .fcitx-candidate-inner {
+  background: transparent !important;
+  box-shadow: none;
+  transition: background-color 150ms ease, box-shadow 150ms ease;
+}
+#fcitx-theme .fcitx-candidate.fcitx-highlighted { z-index: 1; }
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-candidate-inner {
+  background: var(--dp-selected) !important;
+  background-size: 240% 100% !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.36), 0 0 7px var(--dp-glow), 0 0 15px var(--dp-glow-2);
+}
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-text,
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-label,
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-comment {
+  color: var(--dp-selected-text) !important;
+}
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-mark.fcitx-no-text {
+  background-color: var(--dp-selected-text) !important;
+  box-shadow: 0 0 6px var(--dp-glow-2);
+}
+#fcitx-theme .fcitx-mousemoved .fcitx-candidate:not(.fcitx-highlighted):hover .fcitx-candidate-inner {
+  background: var(--dp-hover) !important;
+  box-shadow: inset 0 0 0 1px var(--dp-border);
+}
+#fcitx-theme .fcitx-contextmenu {
+  background: var(--dp-surface) !important;
+  border-color: var(--dp-border) !important;
+  color: var(--dp-text) !important;
+}
+#fcitx-theme .fcitx-menu-item:hover {
+  background: var(--dp-selected) !important;
+  color: var(--dp-selected-text) !important;
+}
+
+#fcitx-theme .fcitx-candidate-inner { border-radius: 5px !important; }
+
+@keyframes dp-flow {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-candidate-inner {
+  animation: var(--dp-motion, dp-flow 6s ease-in-out infinite);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #fcitx-theme .fcitx-candidate-inner {
+    animation: none !important;
+    transition: none !important;
+  }
+}

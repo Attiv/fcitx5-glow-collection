@@ -1,0 +1,108 @@
+/* Fcitx5 Aesthetic Collection — generated  |  imported into Glow Collection repo (third-party)
+ * Style-Bauhaus · 包豪斯原色
+ * 红黄蓝、黑与暖白，几何而理性
+ * Static edge-weighted background; no remote assets, scripts, or plugins.
+ */
+
+#fcitx-theme, #fcitx-theme.fcitx-light {
+  --at-surface: linear-gradient(90deg, rgba(128, 102, 0, 0.065) 0 13%, transparent 13% 100%), radial-gradient(circle at 93% 13%, rgba(166, 42, 35, 0.1) 0 12px, transparent 13px), linear-gradient(145deg, rgba(247, 241, 223, 0.98), rgba(241, 234, 212, 0.96));
+  --at-text: #252218;
+  --at-muted: #5e5848;
+  --at-border: #cfc5a8;
+  --at-accent: #806600;
+  --at-accent-2: #a62a23;
+  --at-selected: linear-gradient(120deg, #a62a23, #17498d);
+  --at-selected-text: #ffffff;
+  --at-ring: inset 0 0 0 1px rgba(255, 255, 255, 0.28), 3px 3px 0 rgba(128, 102, 0, 0.48);
+  --at-glow: rgba(128, 102, 0, 0.2);
+  --at-glow-2: rgba(166, 42, 35, 0.16);
+  --at-hover: rgba(128, 102, 0, 0.1);
+  --at-shadow: rgba(0, 0, 0, 0.13);
+}
+
+#fcitx-theme.fcitx-dark {
+  --at-surface: linear-gradient(90deg, rgba(244, 202, 54, 0.065) 0 13%, transparent 13% 100%), radial-gradient(circle at 93% 13%, rgba(228, 111, 103, 0.1) 0 12px, transparent 13px), linear-gradient(145deg, rgba(33, 31, 25, 0.98), rgba(24, 31, 42, 0.96));
+  --at-text: #f6efd8;
+  --at-muted: #c1b89c;
+  --at-border: #5b5542;
+  --at-accent: #f4ca36;
+  --at-accent-2: #e46f67;
+  --at-selected: linear-gradient(120deg, #f5d34f, #8fb3ef);
+  --at-selected-text: #211a0e;
+  --at-ring: inset 0 0 0 1px rgba(255, 255, 255, 0.28), 3px 3px 0 rgba(244, 202, 54, 0.48);
+  --at-glow: rgba(244, 202, 54, 0.3);
+  --at-glow-2: rgba(228, 111, 103, 0.24);
+  --at-hover: rgba(244, 202, 54, 0.1);
+  --at-shadow: rgba(0, 0, 0, 0.28);
+}
+
+#fcitx-theme .fcitx-panel {
+  background: var(--at-surface) !important;
+  border-color: var(--at-border) !important;
+  box-shadow: 0 6px 16px var(--at-shadow), inset 0 1px 0 rgba(255,255,255,.08) !important;
+}
+#fcitx-theme .fcitx-candidate-background,
+#fcitx-theme .fcitx-panel-blur,
+#fcitx-theme .fcitx-header,
+#fcitx-theme .fcitx-preedit,
+#fcitx-theme .fcitx-aux-up,
+#fcitx-theme .fcitx-aux-down,
+#fcitx-theme .fcitx-paging,
+#fcitx-theme .fcitx-divider-side,
+#fcitx-theme .fcitx-hoverables.fcitx-horizontal-scroll .fcitx-divider-middle {
+  background-color: transparent !important;
+}
+#fcitx-theme .fcitx-text,
+#fcitx-theme .fcitx-preedit,
+#fcitx-theme .fcitx-aux-up,
+#fcitx-theme .fcitx-aux-down { color: var(--at-text) !important; }
+#fcitx-theme .fcitx-label,
+#fcitx-theme .fcitx-comment { color: var(--at-muted) !important; }
+#fcitx-theme .fcitx-text,
+#fcitx-theme .fcitx-label,
+#fcitx-theme .fcitx-comment { text-shadow: none; }
+#fcitx-theme .fcitx-caret.fcitx-no-text {
+  background-color: var(--at-accent) !important;
+  box-shadow: 0 0 5px var(--at-glow);
+}
+#fcitx-theme .fcitx-candidate-inner {
+  background: transparent !important;
+  border-radius: 5px !important;
+  box-shadow: none;
+  transition: background-color 150ms ease, box-shadow 150ms ease;
+}
+#fcitx-theme .fcitx-candidate.fcitx-highlighted { z-index: 1; }
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-candidate-inner {
+  background: var(--at-selected) !important;
+  background-size: 220% 100% !important;
+  box-shadow: var(--at-ring), 0 0 7px var(--at-glow), 0 0 13px var(--at-glow-2);
+}
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-text,
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-label,
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-comment {
+  color: var(--at-selected-text) !important;
+}
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-mark.fcitx-no-text {
+  background-color: var(--at-selected-text) !important;
+  box-shadow: 0 0 5px var(--at-glow-2);
+}
+#fcitx-theme .fcitx-mousemoved .fcitx-candidate:not(.fcitx-highlighted):hover .fcitx-candidate-inner {
+  background: var(--at-hover) !important;
+  box-shadow: inset 0 0 0 1px var(--at-border);
+}
+#fcitx-theme .fcitx-contextmenu {
+  background: var(--at-surface) !important;
+  border-color: var(--at-border) !important;
+  color: var(--at-text) !important;
+}
+#fcitx-theme .fcitx-menu-item:hover {
+  background: var(--at-selected) !important;
+  color: var(--at-selected-text) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #fcitx-theme .fcitx-candidate-inner {
+    animation: none !important;
+    transition: none !important;
+  }
+}

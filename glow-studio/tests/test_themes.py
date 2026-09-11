@@ -70,5 +70,53 @@ class ThemeTests(unittest.TestCase):
         self.assertTrue((PACK / 'preview.html').is_file(), 'Offline preview must exist')
         self.assertTrue((ROOT / 'README-Glow.md').is_file(), 'Chinese instructions must exist')
 
+    def guests(self):
+        files = sorted(ROOT.glob('Guest-*.conf'))
+        self.assertEqual(len(files), 71, 'Seventy-one imported guest themes must exist')
+        return files
+
+    def test_guest_themes_match_source(self):
+        """Every imported conf must equal its upstream source except UserCss."""
+        for f in self.guests():
+            stem = f.stem.removeprefix('Guest-')
+            source = ROOT / 'fcitx5-custom-theme-collection/theme' / f'{stem}.conf'
+            self.assertTrue(source.is_file(), f'upstream source missing for {f.name}')
+            got = configparser.ConfigParser(interpolation=None, )
+            got.optionxform = str
+            got.read(f)
+            want = configparser.ConfigParser(interpolation=None)
+            want.optionxform = str
+            want.read(source)
+            self.assertEqual(got.sections(), want.sections(), f.name)
+            for section in want.sections():
+                for key, value in want[section].items():
+                    if key == 'UserCss':
+                        continue
+                    self.assertEqual(got[section][key], value,
+                                     f'{f.name} [{section}] {key} drifted from upstream')
+
+    def test_guest_css_is_installed_and_self_contained(self):
+        for f in self.guests():
+            c = configparser.ConfigParser(interpolation=None)
+            c.read(f)
+            uri = c['Advanced']['UserCss']
+            self.assertTrue(uri.startswith('fcitx:///file/css/guest-'), f.name)
+            name = uri.rsplit('/', 1)[-1]
+            css = (PACK / 'css' / name).read_text()
+            self.assertEqual(css, (ROOT.parent / 'www/css' / name).read_text(), name)
+            self.assertNotRegex(css, r'@import|url\(|:selected|\.fcitx-candidate-list')
+            self.assertIn('.fcitx-candidate.fcitx-highlighted', css)
+            self.assertIn('prefers-reduced-motion: reduce', css)
+            # Guest styles are paint-only; they must not touch layout geometry.
+            self.assertNotRegex(css, r'(?m)^\s*(width|height|min-width|max-width|transform|padding|margin)\s*:')
+            self.assertEqual(css.count('{'), css.count('}'))
+
+    def test_guest_themes_are_distinct_and_documented(self):
+        names = {f.stem for f in self.guests()}
+        self.assertEqual(len(names), 71, 'Guest theme names must be unique')
+        readme = (ROOT / 'README.md').read_text()
+        for name in names:
+            self.assertIn(f'`{name}`', readme, f'{name} must appear in README.md')
+
 if __name__ == '__main__':
     unittest.main()

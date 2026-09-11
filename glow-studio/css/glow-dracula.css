@@ -1,0 +1,122 @@
+/* Fcitx5 Glow Collection — generated
+ * Dracula · 夜幕 | 紫电呼吸
+ * Only paint is customized. Native geometry and scrolling stay intact.
+ * Set --gs-motion: none to keep the glow static.
+ */
+#fcitx-theme, #fcitx-theme.fcitx-light {
+  --gs-surface: linear-gradient(145deg, #f7f3ff, #eee8fb);
+  --gs-text: #3c3156;
+  --gs-muted: #76618b;
+  --gs-accent: #9770d1;
+  --gs-border: #d3c2ec;
+  --gs-selected: linear-gradient(115deg, #7145aa, #533981);
+  --gs-selected-text: #ffffff;
+  --gs-ring: inset 0 -2px 0 rgba(151, 112, 209, 0.9), inset 0 0 0 1px rgba(156, 232, 204, 0.5);
+  --gs-glow: rgba(151, 112, 209, 0.23);
+  --gs-glow-soft: rgba(151, 112, 209, 0.13);
+  --gs-glow-strong: rgba(151, 112, 209, 0.34);
+  --gs-hover: rgba(151, 112, 209, 0.12);
+  --gs-panel-shadow: rgba(0, 0, 0, 0.13);
+}
+#fcitx-theme.fcitx-dark {
+  --gs-surface: linear-gradient(145deg, #292738, #201e2d);
+  --gs-text: #f2eaff;
+  --gs-muted: #bdb0d1;
+  --gs-accent: #bf9aff;
+  --gs-border: #635276;
+  --gs-selected: linear-gradient(115deg, #c4a1f7, #a88ade);
+  --gs-selected-text: #302243;
+  --gs-ring: inset 0 -2px 0 rgba(191, 154, 255, 0.9), inset 0 0 0 1px rgba(156, 232, 204, 0.5);
+  --gs-glow: rgba(191, 154, 255, 0.35);
+  --gs-glow-soft: rgba(191, 154, 255, 0.21);
+  --gs-glow-strong: rgba(191, 154, 255, 0.51);
+  --gs-hover: rgba(191, 154, 255, 0.12);
+  --gs-panel-shadow: rgba(0, 0, 0, 0.28);
+}
+
+/* Current and older Webview versions paint the panel in different layers. */
+#fcitx-theme .fcitx-panel {
+  background: var(--gs-surface) !important;
+  border-color: var(--gs-border) !important;
+  box-shadow: 0 6px 16px var(--gs-panel-shadow), inset 0 1px 0 rgba(255,255,255,.06) !important;
+}
+#fcitx-theme .fcitx-candidate-background,
+#fcitx-theme .fcitx-panel-blur,
+#fcitx-theme .fcitx-header,
+#fcitx-theme .fcitx-preedit,
+#fcitx-theme .fcitx-aux-up,
+#fcitx-theme .fcitx-aux-down,
+#fcitx-theme .fcitx-paging,
+#fcitx-theme .fcitx-divider-side,
+#fcitx-theme .fcitx-hoverables.fcitx-horizontal-scroll .fcitx-divider-middle {
+  background-color: transparent !important;
+}
+#fcitx-theme .fcitx-text { color: var(--gs-text) !important; }
+#fcitx-theme .fcitx-label,
+#fcitx-theme .fcitx-comment { color: var(--gs-muted) !important; }
+#fcitx-theme .fcitx-text,
+#fcitx-theme .fcitx-label,
+#fcitx-theme .fcitx-comment { text-shadow: none; }
+#fcitx-theme .fcitx-preedit,
+#fcitx-theme .fcitx-aux-up,
+#fcitx-theme .fcitx-aux-down { color: var(--gs-text) !important; }
+#fcitx-theme .fcitx-caret.fcitx-no-text {
+  background-color: var(--gs-accent) !important;
+  box-shadow: 0 0 5px var(--gs-glow);
+}
+#fcitx-theme .fcitx-candidate-inner {
+  background: transparent !important;
+  box-shadow: none;
+  transition: box-shadow 160ms ease, background-color 160ms ease;
+}
+/* Paint the selected candidate above adjacent candidate backgrounds. No movement. */
+#fcitx-theme .fcitx-candidate.fcitx-highlighted { z-index: 1; }
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-candidate-inner {
+  background: var(--gs-selected) !important;
+  background-size: 220% 100% !important;
+  box-shadow: var(--gs-ring), 0 0 6px var(--gs-glow), 0 0 12px var(--gs-glow-soft);
+}
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-text,
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-label,
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-comment {
+  color: var(--gs-selected-text) !important;
+}
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-mark.fcitx-no-text {
+  background-color: var(--gs-selected-text) !important;
+  box-shadow: 0 0 5px var(--gs-glow);
+}
+/* Mouse hover is a quiet inset outline, never a second luminous selection. */
+#fcitx-theme .fcitx-mousemoved .fcitx-candidate:not(.fcitx-highlighted):hover .fcitx-candidate-inner {
+  box-shadow: inset 0 0 0 1px var(--gs-border);
+}
+#fcitx-theme .fcitx-paging .fcitx-hoverable-inner:hover {
+  background: var(--gs-hover) !important;
+}
+#fcitx-theme .fcitx-contextmenu {
+  background: var(--gs-surface) !important;
+  border-color: var(--gs-border) !important;
+  color: var(--gs-text) !important;
+}
+#fcitx-theme .fcitx-menu-item:hover {
+  background: var(--gs-selected) !important;
+  color: var(--gs-selected-text) !important;
+}
+
+#fcitx-theme .fcitx-candidate-inner { border-radius: 7px !important; }
+
+@keyframes gs-breathe {
+  0%, 100% { box-shadow: var(--gs-ring), 0 0 5px var(--gs-glow), 0 0 10px var(--gs-glow-soft); }
+  50% { box-shadow: var(--gs-ring), 0 0 8px var(--gs-glow-strong), 0 0 15px var(--gs-glow-soft); }
+}
+#fcitx-theme .fcitx-candidate.fcitx-highlighted .fcitx-candidate-inner {
+  animation: var(--gs-motion, gs-breathe 3.8s ease-in-out infinite);
+}
+
+
+/* Honor macOS Reduce Motion. The static selected glow remains. */
+@media (prefers-reduced-motion: reduce) {
+  #fcitx-theme .fcitx-candidate-inner {
+    animation: none !important;
+    transition: none !important;
+  }
+}

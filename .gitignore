@@ -2,14 +2,3 @@ __pycache__/
 *.pyc
 .DS_Store
 docs/
-glow-studio/browser-results.json
-glow-studio/build.py
-glow-studio/css/
-glow-studio/original-hashes.json
-glow-studio/palettes.json
-glow-studio/preview-template.html
-glow-studio/preview.html
-glow-studio/tests/
-glow-studio/upstream-results.json
-glow-studio/upstream-source-hashes.json
-glow-studio/verification.md

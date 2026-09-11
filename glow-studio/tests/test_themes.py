@@ -118,5 +118,27 @@ class ThemeTests(unittest.TestCase):
         for name in names:
             self.assertIn(f'`{name}`', readme, f'{name} must appear in README.md')
 
+    def test_readme_images_exist(self):
+        """Every image the README embeds must resolve to a real file."""
+        readme = (ROOT / 'README.md').read_text()
+        refs = re.findall(r'!\[[^\]]*\]\(([^)]+)\)', readme)
+        self.assertGreaterEqual(len(refs), 25, 'README must embed preview images')
+        for ref in refs:
+            if ref.startswith(('http://', 'https://')):
+                continue
+            self.assertTrue((ROOT / ref).is_file(), f'README image missing: {ref}')
+
+    def test_every_guest_family_has_a_preview(self):
+        """Each style family in the README is illustrated by its own strip."""
+        names = {c.stem.split('-')[1].lower() for c in self.guests()}
+        families = {f'{fam}.png' for fam in names}
+        self.assertEqual(len(families), 21, 'Guest themes span 21 style families')
+        directory = PACK / 'screenshots/families'
+        readme = (ROOT / 'README.md').read_text()
+        for name in families:
+            self.assertTrue((directory / name).is_file(), f'missing family preview: {name}')
+            self.assertIn(f'screenshots/families/{name}', readme,
+                          f'{name} is not linked from README.md')
+
 if __name__ == '__main__':
     unittest.main()

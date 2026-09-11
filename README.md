@@ -66,7 +66,19 @@ cp glow-studio/css/guest-*.css ~/.local/share/fcitx5/www/css/
 
 > 主题均为静态低对比度背景，不含 Glow 系列的发光与动效。原始文件保存在 `fcitx5-custom-theme-collection/`，`glow-studio/import-guest.py` 可重新导入。
 
+**全部 71 套一览（深色）**
+
+![Guest 深色总览](glow-studio/screenshots/guest-dark.png)
+
+**全部 71 套一览（浅色）**
+
+![Guest 浅色总览](glow-studio/screenshots/guest-light.png)
+
+> 以上为复用主题 CSS 的模拟预览，不是原生输入法截图；下方按风格家族分组展示。
+
 **装饰艺术** · 3 套
+
+![装饰艺术](glow-studio/screenshots/families/artdeco.png)
 
 | 主题 | 风格 |
 |---|---|
@@ -76,6 +88,8 @@ cp glow-studio/css/guest-*.css ~/.local/share/fcitx5/www/css/
 
 **包豪斯** · 3 套
 
+![包豪斯](glow-studio/screenshots/families/bauhaus.png)
+
 | 主题 | 风格 |
 |---|---|
 | `Guest-Bauhaus-DessauBlue` | 包豪斯·德绍蓝 |
@@ -83,6 +97,8 @@ cp glow-studio/css/guest-*.css ~/.local/share/fcitx5/www/css/
 | `Guest-Bauhaus-WeimarOchre` | 包豪斯·魏玛赭黄 |
 
 **赛博朋克** · 3 套
+
+![赛博朋克](glow-studio/screenshots/families/cyberpunk.png)
 
 | 主题 | 风格 |
 |---|---|
@@ -92,6 +108,8 @@ cp glow-studio/css/guest-*.css ~/.local/share/fcitx5/www/css/
 
 **暗黑学院** · 3 套
 
+![暗黑学院](glow-studio/screenshots/families/darkacademia.png)
+
 | 主题 | 风格 |
 |---|---|
 | `Guest-DarkAcademia-BurgundyArchive` | 暗黑学院·勃艮第档案 |
@@ -99,6 +117,8 @@ cp glow-studio/css/guest-*.css ~/.local/share/fcitx5/www/css/
 | `Guest-DarkAcademia-OxfordStudy` | 暗黑学院·牛津书房 |
 
 **多巴胺** · 6 套
+
+![多巴胺](glow-studio/screenshots/families/dopamine.png)
 
 | 主题 | 风格 |
 |---|---|
@@ -111,6 +131,8 @@ cp glow-studio/css/guest-*.css ~/.local/share/fcitx5/www/css/
 
 **哥特式** · 3 套
 
+![哥特式](glow-studio/screenshots/families/gothic.png)
+
 | 主题 | 风格 |
 |---|---|
 | `Guest-Gothic-BloodRose` | 哥特式·血色玫瑰 |
@@ -118,6 +140,8 @@ cp glow-studio/css/guest-*.css ~/.local/share/fcitx5/www/css/
 | `Guest-Gothic-MoonlitViolet` | 哥特式·月光紫罗兰 |
 
 **马卡龙** · 3 套
+
+![马卡龙](glow-studio/screenshots/families/macaron.png)
 
 | 主题 | 风格 |
 |---|---|
@@ -127,6 +151,8 @@ cp glow-studio/css/guest-*.css ~/.local/share/fcitx5/www/css/
 
 **孟菲斯** · 3 套
 
+![孟菲斯](glow-studio/screenshots/families/memphis.png)
+
 | 主题 | 风格 |
 |---|---|
 | `Guest-Memphis-NightParty` | 孟菲斯·夜间派对 |
@@ -134,6 +160,8 @@ cp glow-studio/css/guest-*.css ~/.local/share/fcitx5/www/css/
 | `Guest-Memphis-PrimaryPlay` | 孟菲斯·原色游戏 |
 
 **极简主义** · 3 套
+
+![极简主义](glow-studio/screenshots/families/minimal.png)
 
 | 主题 | 风格 |
 |---|---|
@@ -143,6 +171,8 @@ cp glow-studio/css/guest-*.css ~/.local/share/fcitx5/www/css/
 
 **莫兰迪** · 3 套
 
+![莫兰迪](glow-studio/screenshots/families/morandi.png)
+
 | 主题 | 风格 |
 |---|---|
 | `Guest-Morandi-DustyRose` | 莫兰迪·灰粉玫瑰 |
@@ -150,6 +180,8 @@ cp glow-studio/css/guest-*.css ~/.local/share/fcitx5/www/css/
 | `Guest-Morandi-SageStone` | 莫兰迪·鼠尾草石 |
 
 **新中式** · 3 套
+
+![新中式](glow-studio/screenshots/families/neochinese.png)
 
 | 主题 | 风格 |
 |---|---|
@@ -159,6 +191,8 @@ cp glow-studio/css/guest-*.css ~/.local/share/fcitx5/www/css/
 
 **黑色电影** · 3 套
 
+![黑色电影](glow-studio/screenshots/families/noir.png)
+
 | 主题 | 风格 |
 |---|---|
 | `Guest-Noir-AmberFog` | 黑色电影·琥珀迷雾 — 旧胶片棕、路灯琥珀与浓重黑影 |
@@ -166,6 +200,8 @@ cp glow-studio/css/guest-*.css ~/.local/share/fcitx5/www/css/
 | `Guest-Noir-Crimson` | 黑色电影·猩红 — 煤黑、烟灰与一抹猩红，悬疑而危险 |
 
 **北欧** · 3 套
+
+![北欧](glow-studio/screenshots/families/nordic.png)
 
 | 主题 | 风格 |
 |---|---|
@@ -175,6 +211,8 @@ cp glow-studio/css/guest-*.css ~/.local/share/fcitx5/www/css/
 
 **蒸汽朋克** · 3 套
 
+![蒸汽朋克](glow-studio/screenshots/families/steampunk.png)
+
 | 主题 | 风格 |
 |---|---|
 | `Guest-Steampunk-BrassEngine` | 蒸汽朋克·黄铜引擎 |
@@ -182,6 +220,8 @@ cp glow-studio/css/guest-*.css ~/.local/share/fcitx5/www/css/
 | `Guest-Steampunk-VerdigrisClock` | 蒸汽朋克·铜绿钟表 |
 
 **综合作风** · 8 套
+
+![综合作风](glow-studio/screenshots/families/style.png)
 
 | 主题 | 风格 |
 |---|---|
@@ -196,6 +236,8 @@ cp glow-studio/css/guest-*.css ~/.local/share/fcitx5/www/css/
 
 **合成波** · 3 套
 
+![合成波](glow-studio/screenshots/families/synthwave.png)
+
 | 主题 | 风格 |
 |---|---|
 | `Guest-Synthwave-LaserSunset` | 合成波·激光落日 |
@@ -203,6 +245,8 @@ cp glow-studio/css/guest-*.css ~/.local/share/fcitx5/www/css/
 | `Guest-Synthwave-NeonDrive` | 合成波·霓虹夜驾 |
 
 **热带主义** · 3 套
+
+![热带主义](glow-studio/screenshots/families/tropical.png)
 
 | 主题 | 风格 |
 |---|---|
@@ -212,6 +256,8 @@ cp glow-studio/css/guest-*.css ~/.local/share/fcitx5/www/css/
 
 **蒸汽波** · 3 套
 
+![蒸汽波](glow-studio/screenshots/families/vaporwave.png)
+
 | 主题 | 风格 |
 |---|---|
 | `Guest-Vaporwave-Mallsoft` | 蒸汽波·梦核商场 |
@@ -219,6 +265,8 @@ cp glow-studio/css/guest-*.css ~/.local/share/fcitx5/www/css/
 | `Guest-Vaporwave-OceanDream` | 蒸汽波·海洋梦境 |
 
 **侘寂** · 3 套
+
+![侘寂](glow-studio/screenshots/families/wabisabi.png)
 
 | 主题 | 风格 |
 |---|---|
@@ -228,6 +276,8 @@ cp glow-studio/css/guest-*.css ~/.local/share/fcitx5/www/css/
 
 **和风** · 3 套
 
+![和风](glow-studio/screenshots/families/wafu.png)
+
 | 主题 | 风格 |
 |---|---|
 | `Guest-Wafu-Aizome` | 和风·藍染 — 藍染深青、月白与浅墨，沉稳清澈 |
@@ -235,6 +285,8 @@ cp glow-studio/css/guest-*.css ~/.local/share/fcitx5/www/css/
 | `Guest-Wafu-SakuraInk` | 和风·樱墨 — 樱粉、墨黑与朱印红，柔和中带一点书法感 |
 
 **Y2K** · 3 套
+
+![Y2K](glow-studio/screenshots/families/y2k.png)
 
 | 主题 | 风格 |
 |---|---|
@@ -253,10 +305,12 @@ cp glow-studio/css/guest-*.css ~/.local/share/fcitx5/www/css/
 ├── glow-studio/
 │   ├── build.py               # 生成 Glow 系列 conf 与 CSS
 │   ├── import-guest.py        # 导入 Guest 系列
+│   ├── build-guest-previews.cjs  # 渲染 Guest 预览图
+│   ├── trim-previews.py       # 裁切压缩预览图
 │   ├── palettes.json          # Glow 调色板数据
 │   ├── css/                   # 全部 CSS：glow-*.css + guest-*.css
 │   ├── preview.html           # 离线交互图册
-│   ├── screenshots/           # 预览截图
+│   ├── screenshots/           # 预览截图（families/ 为分家族预览）
 │   └── tests/                 # 单元测试与浏览器检查
 └── fcitx5-custom-theme-collection/   # Guest 系列原始文件
 ```
@@ -269,6 +323,10 @@ python3 glow-studio/build.py
 
 # 重新导入 Guest 系列（含 CSS 安装）
 python3 glow-studio/import-guest.py --install-css
+
+# 重新生成 Guest 预览图（需 Playwright）
+PLAYWRIGHT_MODULE=/path/to/playwright node glow-studio/build-guest-previews.cjs
+python3 glow-studio/trim-previews.py
 
 # 校验
 python3 -m unittest discover -s glow-studio/tests -v
